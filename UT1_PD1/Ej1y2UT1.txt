@@ -1,0 +1,38 @@
+UT1_PD1
+
+EJERCICIO 1
+
+Salida: El programa comienza en el main, por lo que lo primero que hace es llamar a print() con "No, yo ", luego llama zoop()
+dentro de zoop() llama a buffle() e imprime "pac". Después llama a ping() y escribe "." y salta de linea. Vuelve a zoop() y sigue, 
+ejecuta "Vos zacata" y llama a buffle(), por lo que escribe "pac" y llama a ping() poniendo el punto "." y saltando de linea.Como termino esas instrucciones,
+vuelve al main y ejecuta "Yo" y llama a buffle() (última instruccion del main). En buffle() escribe "pac" y llama a ping() pone "." salta de linea y termina.
+
+Salida:
+
+No, yo pac.
+Vos zacata pac.
+Yo pac.
+
+EJERCICIO 2
+
+a) La primer sentencia que se ejecuta es el llamado al sipo del main con "traqueteo" y 13 como parámetros.
+
+b) 
+public class Zumbido {
+public static void desconcertar (String dirigible) {	7
+System.out.println (dirigible);	8
+sipo ("ping", -5);	9
+}
+public static void sipo (String membrillo, int flag) {	2   10
+if (flag < 0) {	3   11
+System.out.println (membrillo + " sup");	12
+} else {	4
+System.out.println ("ik");	5
+desconcertar (membrillo);	6
+System.out.println ("muaa-ja-ja-ja");	13
+}
+}
+public static void main (String[] args) {
+sipo ("traqueteo", 13);	1
+}
+}
